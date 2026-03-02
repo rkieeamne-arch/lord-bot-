@@ -11,7 +11,7 @@ import { GoogleGenAI } from "@google/genai";
 import { Mistral } from "@mistralai/mistralai";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const db = new Database("bot_database.db");
 
 // Debugging GEMINI_API_KEY
